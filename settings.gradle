@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+        plugins {
+        id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+            }
+        maven { url "https://maven.aliyun.com/repository/releases" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "TVBoxMobile"
+include ':app'
+include ':player'
+include ':quickjs'
+include ':TabLayout'
+include ':ViewPager1Delegate'
+include ':crash'
+include ':pyramid'
